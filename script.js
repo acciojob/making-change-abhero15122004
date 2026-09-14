@@ -1,6 +1,6 @@
-//your JS code here. If required.
-
 function makeChange(amount) {
+    amount = Number(amount);
+
     const q = Math.floor(amount / 25);
     amount = amount % 25;
 
@@ -19,6 +19,7 @@ function makeChange(amount) {
         p: p
     };
 }
+
 // Do not the change the code below
 const c = prompt("Enter c: ");
 alert(JSON.stringify(makeChange(c)));
